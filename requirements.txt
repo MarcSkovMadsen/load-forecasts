@@ -1,0 +1,16 @@
+# dask
+holoviews
+hvplot
+jupyterhub
+pandas
+panel
+scikit-learn
+diskcache
+
+# Quality
+pylint
+mypy
+pytest
+isort
+black
+autoflake
