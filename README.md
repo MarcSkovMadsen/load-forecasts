@@ -2,11 +2,22 @@
 
 This project is used to develop simple data pipelines, visualizations, models and apps based on weather and load data.
 
-## Source data
+## Source data to Ingest
 
 - [NOAA Observations](https://www1.ncdc.noaa.gov/pub/data/noaa/isd-lite/) (Station: 722430-12960)
 - [Ercot Hourly Load Data Archives](http://www.ercot.com/gridinfo/load/load_hist/)
 
+## Transformation
+
+TBD
+
+## Machine Learning
+
+Use Noaa observations data for station 722430-12960 to forecast the Ercot Hourly Load Data for the `COAST` area
+
+## App
+
+TBD
 
 ## Installation
 
