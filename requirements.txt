@@ -6,6 +6,7 @@ pandas
 panel
 scikit-learn
 diskcache
+requests
 
 # Quality
 pylint

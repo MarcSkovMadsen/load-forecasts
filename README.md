@@ -2,10 +2,14 @@
 
 This project is used to develop simple data pipelines, visualizations, models and apps based on weather and load data.
 
+VERY PRELIMINARY
+
 ## Source data to Ingest
 
-- [NOAA Observations](https://www1.ncdc.noaa.gov/pub/data/noaa/isd-lite/) (Station: 722430-12960)
+- [NOAA Observations](https://www1.ncdc.noaa.gov/pub/data/noaa/isd-lite/)
 - [Ercot Hourly Load Data Archives](http://www.ercot.com/gridinfo/load/load_hist/)
+
+Ingest as much of the NOAA observations as possible to test performance but get station 722430-12960 as it is needed for the Machine Learning part.
 
 ## Transformation
 
