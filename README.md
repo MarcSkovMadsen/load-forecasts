@@ -12,13 +12,11 @@ or following the installation instructions below.
 
 ## Installation
 
-Using python 3.7.6
+Using conda
 
 ```bash
-python -m venv .venv
-source .venv/Scripts/activate
-pip install pip==21.0.1
-pip install -r requirements.txt
+conda env create -f environment.yml
+conda activate load-forecasts
 ```
 
 ## Notebooks
@@ -31,6 +29,14 @@ jupyter lab
 
 and open the `notebooks/overview.ipynb` notebook.
 
+## App
+
+You can run the app via
+
+```bash
+panel serve notebooks/app.py --show
+```
+
 ## Development
 
 Before you git push please clean the notebooks via
@@ -39,10 +45,8 @@ Before you git push please clean the notebooks via
 jupyter nbconvert --clear-output --inplace notebooks/*.ipynb
 ```
 
-## Docker
-
-You can build a local image via
+For app development with hot reload use
 
 ```bash
-jupyter-repo2docker .
+panel serve notebooks/app.py --auto --show
 ```

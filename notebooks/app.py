@@ -3,11 +3,13 @@ import pandas as pd
 from diskcache import Cache
 import hvplot.pandas
 import pathlib
+import holoviews as hv
 
 import param
 pn.extension("perspective")
 pn.config.sizing_mode="stretch_width"
 
+ACCENT_COLOR = "#E1477E"
 ROOT = pathlib.Path(__file__).parent.parent
 cache = Cache(directory=ROOT/".cache")
 # cache.clear()
@@ -19,9 +21,9 @@ def read_stationlist():
     return pd.read_csv(STATIONLIST_CSV, parse_dates=["BEGIN", "END"])
 
 STATIONLIST = read_stationlist()
-print(STATIONLIST.dtypes)
 
-plot = STATIONLIST.hvplot(x="LAT", y="LON", coastline=True)
+plot = STATIONLIST.hvplot(x="LON", y="LAT", kind="points", coastline=True, color=ACCENT_COLOR, responsive=True, height=500)
+plot = hv.element.tiles.EsriImagery() * plot
 
 class Settings(param.Parameterized):
     clear_cache = param.Event()
@@ -34,7 +36,6 @@ class Settings(param.Parameterized):
 settings = Settings()
 
 template = pn.template.FastListTemplate(title="Load Forecast", theme="dark")
-template.main.append(pn.pane.Perspective(STATIONLIST, height=500, template="material-dark"))
-template.main.append(pn.pane.HoloViews(plot))
+template.main.append(pn.Column(pn.pane.Markdown("# Noaa Station List"), pn.pane.HoloViews(plot), pn.widgets.DataFrame(STATIONLIST.head())))
 template.sidebar.append(pn.Param(settings))
 template.servable()
