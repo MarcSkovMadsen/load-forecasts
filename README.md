@@ -1,27 +1,8 @@
-# Load Forecasting
+# Load Forecasting Experiments
 
 This project is used to develop simple data pipelines, visualizations, models and apps based on weather and load data.
 
-VERY PRELIMINARY
-
-## Source data to Ingest
-
-- [NOAA Observations](https://www1.ncdc.noaa.gov/pub/data/noaa/isd-lite/)
-- [Ercot Hourly Load Data Archives](http://www.ercot.com/gridinfo/load/load_hist/)
-
-Ingest as much of the NOAA observations as possible to test performance but get station 722430-12960 as it is needed for the Machine Learning part.
-
-## Transformation
-
-TBD
-
-## Machine Learning
-
-Use Noaa observations data for station 722430-12960 to forecast the Ercot Hourly Load Data for the `COAST` area
-
-## App
-
-TBD
+Checkout the `notebooks/overview.ipynb` notebooks to get started.
 
 ## Installation
 
@@ -36,6 +17,18 @@ pip install -r requirements.txt
 
 ## Notebooks
 
+You can now run
+
 ```bash
 jupyter lab
+```
+
+and open the `notebooks/overview.ipynb` notebook.
+
+## Development
+
+Before you git push please clean the notebooks via
+
+```bash
+jupyter nbconvert --clear-output --inplace notebooks/*.ipynb
 ```

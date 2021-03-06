@@ -130,3 +130,6 @@ dmypy.json
 README.md
 jupyterhub.sqlite
 data/*
+requirements.txt
+.gitignore
+models/pickle_model.pkl
