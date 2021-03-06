@@ -23,3 +23,5 @@ dependencies:
   - isort
   - black
   - autoflake
+  - cartopy
+  - geoviews
