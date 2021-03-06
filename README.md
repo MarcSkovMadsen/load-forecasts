@@ -32,3 +32,11 @@ Before you git push please clean the notebooks via
 ```bash
 jupyter nbconvert --clear-output --inplace notebooks/*.ipynb
 ```
+
+## Docker
+
+You can build a local image via
+
+```bash
+jupyter-repo2docker .
+```
