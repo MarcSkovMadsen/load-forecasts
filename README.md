@@ -2,13 +2,13 @@
 
 This project is used to develop simple data pipelines, visualizations, models and apps based on weather and load data.
 
+For a 5min video introduction click [here](https://youtu.be/1s5qThItIDU).
+
 Checkout the `notebooks/overview.ipynb` on binder
 
 [![Binder Lab](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/MarcSkovMadsen/load-forecasts/HEAD?filepath=notebooks%2Foverview.ipynb&urlpath=lab)
 
-Copy markdown link to clipboard
-
-or following the installation instructions below.
+or follow the installation instructions below.
 
 ## Installation
 
