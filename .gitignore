@@ -133,3 +133,5 @@ data/*
 requirements.txt
 .gitignore
 models/pickle_model.pkl
+scripts
+.vscode/settings.json
