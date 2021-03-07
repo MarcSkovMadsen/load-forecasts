@@ -14,7 +14,6 @@ dependencies:
   - requests
   - pyarrow
   - openpyxl
-  - jupyter_bokeh # needed to make panel work in vs code
   - datashader
   - scikit-learn
   - pylint
@@ -25,3 +24,5 @@ dependencies:
   - autoflake
   - cartopy
   - geoviews
+  - voila
+  - jupyter_panel_proxy

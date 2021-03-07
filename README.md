@@ -1,16 +1,15 @@
 # Load Forecasting Experiments
 
-This project is used to develop simple data pipelines, visualizations, models and apps based on weather and load data.
+This project is used to develop simple load forecasting models and apps.
 
-For a 5min video introduction to this project click [here](https://youtu.be/1s5qThItIDU).
+- For an introduction to load forecasting see [Introduction to Load Forecasting](https://acadpubl.eu/hub/2018-119-15/3/567.pdf)
+- For an introduction to this repo see the 5min video introduction [here](https://youtu.be/1s5qThItIDU).
 
-Checkout the `notebooks/overview.ipynb` on binder
+If you just want to play around with the nodebooks and code you can do so via Binder.
 
 [![Binder Lab](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/MarcSkovMadsen/load-forecasts/HEAD?filepath=notebooks%2Foverview.ipynb&urlpath=lab)
 
-or follow the installation instructions below.
-
-For an introduction to load forecasting see [Introduction to Load Forecasting](https://acadpubl.eu/hub/2018-119-15/3/567.pdf)
+You should start from the `notebooks/overview.ipynb` notebook.
 
 ## Installation
 
