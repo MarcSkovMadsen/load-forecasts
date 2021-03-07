@@ -25,4 +25,4 @@ dependencies:
   - cartopy
   - geoviews
   - voila
-  - jupyter_panel_proxy
+  - jupyter-panel-proxy
