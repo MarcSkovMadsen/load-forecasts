@@ -9,7 +9,6 @@ panel serve 'notebooks/app.py' --auto --show
 """
 import panel as pn
 import pandas as pd
-from diskcache import Cache
 import geoviews as gv
 import geoviews.tile_sources as gvts
 import hvplot.pandas
@@ -26,12 +25,10 @@ pn.extension("perspective")
 pn.config.sizing_mode = "stretch_width"
 
 ACCENT_COLOR = "#E1477E"
-ROOT = pathlib.Path(__file__).parent.parent
-cache = Cache(directory=ROOT / ".cache")
-cache.clear()
+ROOT = pathlib.Path(__file__).parent
 
 STATIONLIST_PATH = (
-    pathlib.Path(__file__).parent.parent / "data" / "gold" / "noaa_stations" / "isd-history.csv"
+    ROOT / "data" / "gold" / "noaa_stations" / "isd-history.csv"
 )
 STATIONLIST_CSV = "https://www1.ncdc.noaa.gov/pub/data/noaa/isd-history.csv"
 

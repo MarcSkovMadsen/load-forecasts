@@ -7,9 +7,9 @@ This project is used to develop simple load forecasting models and apps.
 
 If you just want to play around with the nodebooks and code you can do so via Binder.
 
-[![Binder Lab](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/MarcSkovMadsen/load-forecasts/HEAD?filepath=notebooks%2Foverview.ipynb&urlpath=lab)
+[![Binder Lab](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/MarcSkovMadsen/load-forecasts/HEAD?urlpath=lab)
 
-https://mybinder.org/v2/gh/MarcSkovMadsen/load-forecasts/HEAD?urlpath=/panel/app
+- Panel App: https://mybinder.org/v2/gh/MarcSkovMadsen/load-forecasts/HEAD?urlpath=/panel/app (Does not work currently)
 
 You should start from the `notebooks/overview.ipynb` notebook.
 
