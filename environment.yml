@@ -26,5 +26,6 @@ dependencies:
   - geoviews
   - voila
   - jupyter-panel-proxy
+  - pip
   - pip:
     - git+https://github.com/holoviz/panel.git#egg=panel
