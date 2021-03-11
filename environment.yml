@@ -7,7 +7,6 @@ dependencies:
   - hvplot
   - jupyterlab
   - notebook
-  - pandas
   - panel
   - scikit-learn
   - diskcache
