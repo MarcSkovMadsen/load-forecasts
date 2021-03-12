@@ -106,7 +106,7 @@ def get_station_map(stations, tile=gvts.CartoLight):
 def get_app():
     template = pn.template.FastListTemplate(title="Load Forecasting - ERCOT", theme="dark")
     if "dark" in str(template.theme).lower():
-        tile = gvts.CartoMidnight
+        tile = gvts.CartoDark
     else:
         tile = gvts.CartoLight
 
