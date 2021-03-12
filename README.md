@@ -13,6 +13,8 @@ If you just want to play around with the nodebooks and code you can do so via Bi
 
 You should start from the `notebooks/overview.ipynb` notebook.
 
+The ERCOT data is proprietary and you would need access to the ERCOT data in order to ingest this data.
+
 ## Installation
 
 Using conda
